@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+
+        <menuitem id="base_gift_list" name="Gift Lists" sequence="0" />
+
+    </data>
+</odoo>

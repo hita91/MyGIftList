@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gift_list_list,access_gift_list_list,model_gift_list_list,base.group_user,1,1,1,1
+access_gift_list_product,access_gift_list_product,model_gift_list_product,base.group_user,1,1,1,1
+access_gift_list_comment,access_gift_list_comment,model_gift_list_comment,base.group_user,1,1,1,1

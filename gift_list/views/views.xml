@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+        <record id="gift_list_list_form" model="ir.ui.view">
+            <field name="name">gift_list.list.form</field>
+            <field name="model">gift_list.list</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group col="8">
+                        <group colspan="4" string="List data">
+                        <field name="name" />
+                        <field name="description" />
+                        <field name="event_type" />
+                        <field name="end_date" />
+                        <field name="partner_ids" />
+                        <field name="product_ids" />
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="gift_list_list_tree" model="ir.ui.view">
+            <field name="name">gift_list.list.tree</field>
+            <field name="model">gift_list.list</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />            
+                </tree>
+            </field>
+        </record>
+
+        <record id="gift_list_list_action" model="ir.actions.act_window">
+            <field name="name">List</field>
+            <field name="res_model">gift_list.list</field>
+            <field name="domain">[]</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a new list.
+                    <br/>
+                </p>
+            </field>
+        </record>
+
+        <menuitem
+                action="gift_list_list_action"
+                id="menu_gift_list_list"
+                name="Listas"
+                parent="base_gift_list"
+                sequence="0"
+        />
+
+    </data>
+</odoo>
